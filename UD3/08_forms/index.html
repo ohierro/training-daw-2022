@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form name="main_form">
+        <p>
+            <input type="radio" value="si" name="pregunta" id="pregunta_si">SI</input>
+            <input type="radio" value="no" name="pregunta" id="pregunta_no">NO</input>
+            <input type="radio" value="nsnc" name="pregunta" id="pregunta_nsnc">NS/NC</input>
+        </p>
+
+        <p>
+            <select id="opciones" name="opciones">
+                <option value="1">Primer valor</option>
+                <option value="2">Segundo valor</option>
+                <option value="3">Tercer valor</option>
+                <option value="4">Cuarto valor</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="name">Nombre: </label>
+            <input type="text" name="name"></input>
+            <label for="surname">Apellidos: </label>
+            <input type="text" name="surname"></input>
+            <label for="description">Descripción: </label>
+            <textarea type="textarea" name="description"></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" value="condiciones" name="condiciones" id="condiciones">He leído y acepto las condiciones</input>
+            <input type="checkbox" value="privacidad" name="privacidad" id="privacidad">He leído la política de privacidad</input>
+        </p>
+
+        <p>
+            <button id="submit">Enviar</button>
+        </p>
+    </form>
+</body>
+</html>

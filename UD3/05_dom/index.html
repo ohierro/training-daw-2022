@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sample hello world</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+    header {
+        text-align: center;
+    }
+    main {
+        display: flex;
+        /* max-width: 450px; */
+        /* width: 100%; */
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    nav {
+        flex-grow: 1;
+    }
+    article {
+        /* max-width: 450px; */
+        display: flex;
+        flex-direction: column;
+
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 25px;
+    }
+
+    article h2 {
+        color: grey;
+        text-align: center;
+    }
+
+    .buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: end;
+    }
+</style>
+<body>
+    <header>
+        <h1>My blog</h1>
+        <h2>by me</h2>
+    </header>
+    <div class="container">
+        <main>
+            <article id="introduction">
+                <h2>Test</h2>
+                <p class="first">
+                    Dolorum quisquam vel earum unde ut voluptatem. Veritatis qui omnis magni ullam est voluptatem. Atque eaque reprehenderit odit.
+                    Quas laudantium atque reprehenderit autem eum. Doloremque similique et. Omnis rerum asperiores perspiciatis vel voluptatum. Similique aut est voluptas ipsa sed distinctio cum.
+                    Blanditiis expedita dicta rem voluptatem aut quos. Molestiae et magnam. A quo ab fugit vitae et dolorum. Non alias et autem. Laborum in dignissimos aut. Cumque doloremque quam error ipsa doloribus nihil pariatur.
+                </p>
+                <p>
+                    Dolorum quisquam vel earum unde ut voluptatem. Veritatis qui omnis magni ullam est voluptatem. Atque eaque reprehenderit odit.
+                    Quas laudantium atque reprehenderit autem eum. Doloremque similique et. Omnis rerum asperiores perspiciatis vel voluptatum. Similique aut est voluptas ipsa sed distinctio cum.
+                    Blanditiis expedita dicta rem voluptatem aut quos. Molestiae et magnam. A quo ab fugit vitae et dolorum. Non alias et autem. Laborum in dignissimos aut. Cumque doloremque quam error ipsa doloribus nihil pariatur.
+                </p>
+                <p>
+                    Dolorum quisquam vel earum unde ut voluptatem. Veritatis qui omnis magni ullam est voluptatem. Atque eaque reprehenderit odit.
+                    Quas laudantium atque reprehenderit autem eum. Doloremque similique et. Omnis rerum asperiores perspiciatis vel voluptatum. Similique aut est voluptas ipsa sed distinctio cum.
+                    Blanditiis expedita dicta rem voluptatem aut quos. Molestiae et magnam. A quo ab fugit vitae et dolorum. Non alias et autem. Laborum in dignissimos aut. Cumque doloremque quam error ipsa doloribus nihil pariatur.
+                </p>
+                <div class="buttons">
+                    <button>like</button>
+                    <button>comment</button>
+                </div>
+            </article>
+            <article id="introduction">
+                <h2>Test</h2>
+                <p class="first">
+                    Dolorum quisquam vel earum unde ut voluptatem. Veritatis qui omnis magni ullam est voluptatem. Atque eaque reprehenderit odit.
+                    Quas laudantium atque reprehenderit autem eum. Doloremque similique et. Omnis rerum asperiores perspiciatis vel voluptatum. Similique aut est voluptas ipsa sed distinctio cum.
+                    Blanditiis expedita dicta rem voluptatem aut quos. Molestiae et magnam. A quo ab fugit vitae et dolorum. Non alias et autem. Laborum in dignissimos aut. Cumque doloremque quam error ipsa doloribus nihil pariatur.
+                </p>
+                <p>
+                    Dolorum quisquam vel earum unde ut voluptatem. Veritatis qui omnis magni ullam est voluptatem. Atque eaque reprehenderit odit.
+                    Quas laudantium atque reprehenderit autem eum. Doloremque similique et. Omnis rerum asperiores perspiciatis vel voluptatum. Similique aut est voluptas ipsa sed distinctio cum.
+                    Blanditiis expedita dicta rem voluptatem aut quos. Molestiae et magnam. A quo ab fugit vitae et dolorum. Non alias et autem. Laborum in dignissimos aut. Cumque doloremque quam error ipsa doloribus nihil pariatur.
+                </p>
+                <p>
+                    Dolorum quisquam vel earum unde ut voluptatem. Veritatis qui omnis magni ullam est voluptatem. Atque eaque reprehenderit odit.
+                    Quas laudantium atque reprehenderit autem eum. Doloremque similique et. Omnis rerum asperiores perspiciatis vel voluptatum. Similique aut est voluptas ipsa sed distinctio cum.
+                    Blanditiis expedita dicta rem voluptatem aut quos. Molestiae et magnam. A quo ab fugit vitae et dolorum. Non alias et autem. Laborum in dignissimos aut. Cumque doloremque quam error ipsa doloribus nihil pariatur.
+                </p>
+                <div class="buttons">
+                    <button>like</button>
+                    <button>comment</button>
+                </div>
+            </article>
+        </main>
+        <nav id="nav">
+            <p class="first">
+                <ul class="items">
+                    <li class="item">Elemento 1</li>
+                    <li class="item">Elemento 2</li>
+                    <li class="item">Elemento 3</li>
+                </ul>
+            </p>
+            <p class="buttons">
+                <label class="item" for="username">Nombre de usuario: </label>
+                <input id="username" name="username" />
+                <button>Enviar</button>
+            </p>
+        </nav>
+    </div>
+    <script src='./main.js'></script>
+</body>
+</html>
