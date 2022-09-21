@@ -6,8 +6,11 @@
 
 
 // define variables
-let x, y;
-
+let x = 3, y = 5;
 
 // print sum, substract, multiply and divide
-console.log('something')
+const operaciones=(x,y)=>{
+    console.log(`Suma: ${x+y}\nResta: ${x-y}\nMultiplicación: ${x*y}\nDivisión: ${x/y}`)
+}
+
+operaciones(x,y)
