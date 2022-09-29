@@ -1,15 +1,15 @@
-const { stringify } = require("querystring")
+const { stringify } = require('querystring');
 
 function pingPong() {
     let num = 0;
-    while(num<20){
+    while (num < 20) {
         num++;
-        console.log(num,num%10===0?"PONG":num%5===0?"PING":"")
+        console.log(num, num % 10 === 0 ? 'PONG' : num % 5 === 0 ? 'PING' : '');
     }
-    console.log()
+    console.log();
 }
 
-pingPong()
+pingPong();
 // expected output
 // 1
 // 2

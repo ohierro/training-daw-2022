@@ -1,14 +1,14 @@
 function printMultiplicationTables() {
     for (let i = 1; i <= 10; i++) {
-        let row = []
+        let row = [];
         for (let j = 1; j <= 10; j++) {
-            row.push(i*j);
+            row.push(i * j);
         }
-        console.log(`Tabla del ${i}: `,row.join(" "))
+        console.log(`Tabla del ${i}: `, row.join(' '));
     }
 }
 
-printMultiplicationTables()
+printMultiplicationTables();
 // expected output
 //     1   2   3   ...
 // 1   1   2   3   ...
