@@ -4,7 +4,6 @@ let select = (array, condition) => array.filter((i) => condition(i));
 let pairs = (value) => value % 2 === 0;
 let gt15 = (value) => value > 15;
 let lt10 = (value) => value < 10;
-
 let values = [1, 2, 3, 5, 7, 13, 17, 23, 29];
 
 // sólo pares
