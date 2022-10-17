@@ -1,10 +1,6 @@
 function pingPong() {
-    let num = 0;
-    while (num < 100) {
-        num++;
-        console.log(num, num % 10 === 0 ? 'PONG' : num % 5 === 0 ? 'PING' : '');
-    }
-    console.log();
+    for (let i = 1; i < 100; i++)
+        console.log(i, i % 10 === 0 ? 'PONG' : i % 5 === 0 ? 'PING' : '');
 }
 
 pingPong();
