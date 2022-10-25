@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -11,9 +12,11 @@
     .container {
         display: flex;
     }
+
     header {
         text-align: center;
     }
+
     main {
         display: flex;
         /* max-width: 450px; */
@@ -24,9 +27,11 @@
         padding-right: 100px;
         padding-left: 100px;
     }
+
     nav {
         flex-grow: 1;
     }
+
     .data {
         /* max-width: 450px; */
         width: 70%;
@@ -49,6 +54,7 @@
         justify-content: end;
     }
 </style>
+
 <body>
     <header>
         <h1>My blog</h1>
@@ -61,12 +67,14 @@
                     <th>ID</th>
                     <th>Name</th>
                     <th>Surname</th>
+                    <th>Actions</th>
                 </thead>
                 <tbody>
                     <tr>
                         <td>0</td>
                         <td>John</td>
                         <td>Foo</td>
+                        <td><a href="http://localhost/edit/0">Action</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -76,4 +84,5 @@
         </div>
     </main>
 </body>
+
 </html>
