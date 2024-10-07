@@ -1,4 +1,6 @@
+//assert para verificar una condición
 const assert = require('assert').strict;
+
 
 function abs(value) {
 
