@@ -1,11 +1,11 @@
-'use strict'
+'use strict';
+
 /*A partir del array de pilotos siguiente, realizar las siguientes operaciones:*/
 
 //filter
 //map convierte
 //reduce  
 //siempre aplican sobre objetos!!!!!!!
-
 
 const assert = require('assert').strict;
 
@@ -36,69 +36,66 @@ var pilots = [
   }
 ];
 
-
-//● iterateSimple: iterar e imprimir los pilotos utilizando un for “normal”
-let sum = 0 ;
+//● iterateSimple: iterar e imprimir los pilotos utilizando un for "normal"
 function iterateSimple() {
-  for (let i = 0; i < pilots.length; pilots++) {
+  for (let i = 0; i < pilots.length; i++) {
     console.log(pilots[i]);
   }
-    /*for (let pilot in pilots){
-      console.log(pilots)
-    }*/
 }
-
 
 //● iterateForEach: iterar e imprimir los pilotos utilizando array.forEach
 function iterateForEach() {
   pilots.forEach((pilot) => {
-    console.log(pilot.id)
-    sum += pilot.years;
-  })
+    console.log(pilot);
+  });
 }
+
 
 
 //● mapIds: devolver un array con los id’s de los pilotos utilizando map
 function mapIds() {
 
+
+  /*array vaci ids,itera sobre cada pilot, imprimimos pillot, se añade id con push*/
   let ids = []
-  for (let pilot of pilots)
-  console.log(pilot),
-  ids.push(pilot.id)
+  for (let pilot of pilots){
+    console.log(pilot),
+    ids.push(pilot.id)
+  }
 
   /*let res = pilots.map(function(value , index , array ){
     return value.id
   })*/
-  return pilots.map((value) => value.id)
+  return pilots.map((pilot) => pilot.id)
   
 }
 
+//● rebels: devolver únicamente los pilotos rebeldes, utilizando la función filter
 
+function rebels() {
+  return pilots.filter((pilot) => pilot.faction === 'Rebels');
+}
 
-
-
-//● rebels: devolver únicamente los pilotos rebeldes, utilizando la función
-filter
 function rebels() {
   return pilots
-    .filter((value) => value.faction ===`Rebels` )
-    .map ((value) => value.id)
-    .filter((value) => value > 5)
+    .filter((pilot) => pilot.faction ===`Rebels` )
+    .map ((pilot) => pilot.id)
+    .filter((pilot) => pilot > 5)
   }
 
 
-
-
-
-
- //● totalFaction: devolver el número de pilotos de una determinada facción
+//● totalFaction: devolver el número de pilotos de una determinada facción
 function totalFaction(faction) {
-
-
+  return pilots.filter((pilot) => pilot.faction === faction).length;
 }
 
+//● avgYears: calcular la media de edad de los pilotos de una facción
+/*function avgYears(faction) {
+  const selectedFaction = pilots.filter((pilot) => pilot.faction === faction);
+  const totalYears = selectedFaction.reduce((sum, pilot) => sum + pilot.years, 0);
+  return totalYears / selectedFaction.length;
+}*/
 
-//● avgYears: calcular la media de edad de los pilotos de una facción*/ 
 function avgYears(faction) {
   let selectedFaction  = pilots 
   .filter ((value ) => value.faction  === faction)
@@ -114,18 +111,21 @@ function avgYears(faction) {
   return suma / selectedFaction.length;*/
 }
 
+
 // use console.log
-iterateSimple()
+console.log("iterateSimple:");
+iterateSimple();
 
-iterateForEach()
+console.log("\niterateForEach:");
+iterateForEach();
+
 try {
-  assert.deepStrictEqual(mapIds(), [2,8,40,66])
-  assert.deepStrictEqual(rebels(), [pilots[0], pilots[3]])
-
-  assert.deepStrictEqual(totalFaction('Rebels'), 2)
-
-  assert.deepStrictEqual(avgYears('Rebels'), 22.5)
-  assert.deepStrictEqual(avgYears('Empire'), 25)
+  assert.deepStrictEqual(mapIds(), [2,8,40,66]);
+  assert.deepStrictEqual(rebels(), [pilots[0], pilots[3]]);
+  assert.deepStrictEqual(totalFaction('Rebels'), 2);
+  assert.deepStrictEqual(avgYears('Rebels'), 22.5);
+  assert.deepStrictEqual(avgYears('Empire'), 25);
+  console.log("\nTodas las pruebas pasaron con éxito.");
 } catch (error) {
-  console.error(error)
+  console.error("\nError en las pruebas:", error);
 }

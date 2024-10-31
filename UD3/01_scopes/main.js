@@ -1,3 +1,4 @@
+/*Revisar el funcionamiento del ejemplo propuesto*/
 'use strict'
 
 var x = 10
