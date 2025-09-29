@@ -1,0 +1,9 @@
+//document.querySelectorAll('div');
+//document.querySelectorAll('.buttons');
+//document.querySelector('.buttons');
+//document.querySelectorAll('div.buttons');
+document.querySelectorAll('div')
+document.querySelectorAll('.buttons')
+document.getElementsByClassName('buttons')
+document.querySelector('.butons')
+document.querySelectorAll('div.buttons')
