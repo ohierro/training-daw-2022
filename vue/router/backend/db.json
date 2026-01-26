@@ -1,0 +1,54 @@
+{
+  "$schema": "./node_modules/json-server/schema.json",
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": "ef43",
+      "title": "uno nuevo"
+    },
+    {
+      "id": "6ed8",
+      "title": "test",
+      "views": 0
+    },
+    {
+      "id": "5003",
+      "title": "un nuevo valor",
+      "views": 0
+    },
+    {
+      "id": "28fe",
+      "title": "otro elemneto más",
+      "views": 0
+    },
+    {
+      "id": "1a22",
+      "title": "jasfjsdfsd",
+      "views": 0
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

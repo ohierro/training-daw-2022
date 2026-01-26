@@ -8,6 +8,7 @@
   <div>
     <RouterLink to="/">Go to Home</RouterLink>
     <RouterLink to="/admin">Go to Admin area</RouterLink>
+    <RouterLink to="/posts">Go to Posts</RouterLink>
   </div>
 </template>
 
