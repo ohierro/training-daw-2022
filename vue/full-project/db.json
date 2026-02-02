@@ -1,0 +1,64 @@
+{
+  "$schema": "./node_modules/json-server/schema.json",
+  "users": [
+    {
+      "id": "1",
+      "name": "john",
+      "lastName": "foo",
+      "birthDate": "2026-02-02T15:50:34.837Z",
+      "phoneNumber": "555 123123"
+    },
+    {
+      "id": "2",
+      "name": "john",
+      "lastName": "foo2",
+      "birthDate": "2026-02-02T15:50:34.837Z",
+      "phoneNumber": "555 123123"
+    },
+    {
+      "id": "3",
+      "name": "john",
+      "lastName": "foo3",
+      "birthDate": "2026-02-02T15:50:34.837Z",
+      "phoneNumber": "555 123123"
+    },
+    {
+      "id": 4,
+      "name": "123",
+      "lastName": "123",
+      "birthDate": "2026-02-02T16:15:25.767Z",
+      "phoneNumber": "123"
+    },
+    {
+      "id": 4,
+      "name": "asdf",
+      "lastName": "asdf",
+      "birthDate": "2026-02-02T16:15:51.735Z",
+      "phoneNumber": "asdf"
+    },
+    {
+      "id": 4,
+      "name": "aaa",
+      "lastName": "aaa",
+      "birthDate": "2026-02-02T16:16:08.159Z",
+      "phoneNumber": "aaa"
+    },
+    {
+      "id": 4,
+      "name": "123",
+      "lastName": "123",
+      "birthDate": "2026-02-02T16:20:52.863Z",
+      "phoneNumber": "213"
+    },
+    {
+      "id": 4,
+      "name": "ccc",
+      "lastName": "ccc",
+      "birthDate": "2026-02-02T16:21:19.135Z",
+      "phoneNumber": "ccc"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
