@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  # backend:
+  #   build:
+  #     context: ./backend
+  #     dockerfile: Dockerfile
+  #   container_name: dotnet-backend
+  #   ports:
+  #     - "5000:5000"
+  #   environment:
+  #     - ASPNETCORE_URLS=http://+:5000
+  #     - ASPNETCORE_ENVIRONMENT=Development
+  #   networks:
+  #     - app-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: vue-frontend
+    ports:
+      - "8080:8080"
+    # depends_on:
+    #   - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
