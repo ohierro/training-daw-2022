@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,6 +9,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
+
 <body>
     <form name="main_form">
         <p>
@@ -27,16 +29,18 @@
 
         <p>
             <label for="name">Nombre: </label>
-            <input type="text" name="name"></input>
+            <input type="text" name="name" required></input>
             <label for="surname">Apellidos: </label>
-            <input type="text" name="surname"></input>
+            <input type="text" name="surname" required></input>
             <label for="description">Descripción: </label>
             <textarea type="textarea" name="description"></textarea>
         </p>
 
         <p>
-            <input type="checkbox" value="condiciones" name="condiciones" id="condiciones">He leído y acepto las condiciones</input>
-            <input type="checkbox" value="privacidad" name="privacidad" id="privacidad">He leído la política de privacidad</input>
+            <input type="checkbox" value="condiciones" name="condiciones" id="condiciones">He leído y acepto las
+            condiciones</input>
+            <input type="checkbox" value="privacidad" name="privacidad" id="privacidad">He leído la política de
+            privacidad</input>
         </p>
 
         <p>
@@ -44,4 +48,5 @@
         </p>
     </form>
 </body>
+
 </html>
