@@ -1,18 +1,33 @@
-const assert = require('assert').strict
 
-function insertIfNotExists(array, item, position) {
-    return array
+
+function insertarElemento(array, elemento, alPrincipio) {
+    
+    if (!array.includes(elemento)) {
+        
+        if (alPrincipio) {
+            array.unshift(elemento);
+        } else {
+            
+            array.push(elemento);
+        }
+    }
 }
 
+let array = ['pera','manzana']
+insertarElemento(array, 'pera', false); 
+console.log(array); 
 
-let array = ['pera', 'manzana']
+insertarElemento(array, 'melon', false); 
+console.log(array); 
 
-let result = insertIfNotExists(array, 'pera', false)
-assert.deepStrictEqual(result, ['pera', 'manzana'])
+insertarElemento(array, 'melocoton', true); 
+console.log(array); 
+
+insertarElemento();
+
 
 // result = insertIfNotExists(array, 'melón', false)
 // assert.deepStrictEqual(result, ['pera', 'manzana', 'melón'])
 
 // result = insertIfNotExists(array, 'melocotón', true)
 // assert.deepStrictEqual(result, ['melocotón', 'pera', 'manzana', 'melón'])
-
